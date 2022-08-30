@@ -1,6 +1,9 @@
 ---
 import Layout from "../layouts/Layout.astro";
-import Card from "../components/Card.astro";
+import Github from "../assets/github.svg";
+import Linkedin from "../assets/link.svg";
+import Briefcase from "../assets/briefcase.svg";
+import Twitter from "../assets/twitter.svg";
 ---
 
 <Layout title="About Parra">
@@ -21,14 +24,39 @@ import Card from "../components/Card.astro";
 					solutions with web and native technologies, from the initial
 					to the final stage.
 				</p>
-				<button class="badge badge-outline badge-warning">Cloud enthusiast</button>
-				<button class="badge badge-outline badge-success">Content creator</button>
-				<button class="badge badge-outline badge-accent">CEO of G4A</button>
+				<p class="badge badge-outline badge-warning">
+					Cloud enthusiast
+				</p>
+				<p class="badge badge-outline badge-success">Content creator</p>
+				<p class="badge badge-outline badge-accent">CEO of G4A</p>
+
+				<div
+					class="flex gap-3 mt-10 justify-center align-middle text-center"
+				>
+					<a href="https://github.com/1001-caleb" class="tooltip" data-tip="Github">
+						<img src={Github} alt="" />
+					</a>
+					<a href="https://www.linkedin.com/in/caleb-parra/" class="tooltip" data-tip="linkedin">
+						<img
+							src={Linkedin}
+							alt=""
+							width="23px"
+							class="invert"
+						/>
+					</a>
+					<a href="https://portafolio-parra.vercel.app/" class="tooltip" data-tip="Briefcase">
+						<img
+							src={Briefcase}
+							alt=""
+							width="23px"
+							class="invert"
+						/>
+					</a>
+					<a href="https://twitter.com/ParraCode_" class="tooltip" data-tip="Twitter">
+						<img src={Twitter} alt="" width="24px" class="invert" />
+					</a>
+				</div>
 			</div>
 		</div>
 	</div>
 </Layout>
-
-<style>
-
-</style>
